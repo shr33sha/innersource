@@ -1,0 +1,11 @@
+echo"
+name: CI Pipeline
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      -uses: actions/checkout@v2
+      -name: Run Tests
+       run: echo 'Running tests...'
+" > .github/workflows/ci.yml         
